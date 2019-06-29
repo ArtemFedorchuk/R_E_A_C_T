@@ -28,6 +28,8 @@ a{
   text-align: center;
 }
 
-.footer{
-  color: aqua
+.footer a{
+  font-family: serif;
+  letter-spacing: 7px;
+  color: aqua;
 }
