@@ -1,17 +1,18 @@
 import React from 'react';
+import p from './Profile.module.css';
 
 const Profile = () =>{
     return(
-        <section className="content">
-            <div className="content__header">
-            <img src='http://www.generium.ru/images/nosologies.png'/>
+        <section className={p.content}>
+            <div className={p.content__header}>
+                <img src='http://www.generium.ru/images/nosologies.png'/>
             </div>
             {/* <hr/> */}
             <div className="information">
-                <div className="information__content_logo">
+                <div className={p.logo}>
                     <img src='https://s.tcdn.co/a5a/fe4/a5afe471-fd42-39af-9412-f4a690f0179c/8.png'/>
                 </div>
-                <div className="information__description">
+                <div className={p.information__description}>
                     <h3>Vasso Kolbasso</h3>
                     <p>Дата рождения: 27.08.90</p>
                     <p>Город: California</p>

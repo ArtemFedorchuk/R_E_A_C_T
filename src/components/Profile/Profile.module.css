@@ -1,0 +1,23 @@
+.content{
+    grid-area: c;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-top-left-radius: 50%;
+  }
+  
+  .content__header img{
+    width: 60%;
+    height: auto;
+  }
+  
+  .logo img{
+    width: 180px;
+    height: 180px;
+    border: 2px double grey;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .information__description{
+    color: #000;
+  }
