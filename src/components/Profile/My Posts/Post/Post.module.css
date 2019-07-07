@@ -1,0 +1,21 @@
+.post{
+  display: flex;
+ margin-top: 40px;
+ padding: 10px;
+ border: 1px dashed #000
+}
+.post img{
+width: 150px;
+height: 150px;
+}
+
+.wrap_title{
+  display: flex;
+  justify-content: 
+}
+
+i{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(62, 59, 247)
+}

@@ -3,9 +3,20 @@
     background-color: rgb(255, 255, 255);
     padding: 1em;
     border-top-left-radius: 50%;
+    /* margin: 0 auto; */
   }
   
-  .content__header img{
+  .information{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+
+    /* transform: translate(-50%, -50%); */
+    /* left: auto; */
+    /* right: 50%; */
+  }
+
+  .content__img img{
     width: 60%;
     height: auto;
   }

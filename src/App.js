@@ -8,11 +8,17 @@ import Profile from './../src/components/Profile/Profile';
 
 const App = () => {
   return (
-    <div className="app-wrapper">
-      <Header />
-      <Navbar />
-      <Profile />
-    </div>
+      //<BrowserRouter>
+        <div className="app-wrapper">
+          <Header />
+          <Navbar />
+            <div class="app-wrapper-content">
+            <Route />
+              <Route />
+              <Profile />
+            </div>
+        </div>
+      //</BrowserRouter>
   );
 }
 

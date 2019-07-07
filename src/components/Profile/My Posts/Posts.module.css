@@ -1,0 +1,31 @@
+.post{
+  margin-top:80px;
+}
+
+input{
+  width: 60%;
+  background: rgb(178, 177, 252);
+  border: 1px solid rgb(62, 59, 247);
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(245, 0, 0);
+  font-size: 18px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+button{
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: rgb(80, 77, 243);
+  border: 1px solid rgb(28, 26, 168);
+  border-radius: 5px;
+  transition: .3s ease;
+} 
+
+button:hover{
+  background: rgb(163, 1, 1);
+} 
