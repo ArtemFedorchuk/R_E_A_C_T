@@ -6,7 +6,7 @@ import Posts from './My Posts/Posts';
 
 const Profile = () =>{
     return(
-        <section className={p.content}>
+        <section>
                 <div className={p.content__img}>
                     <img src='http://www.generium.ru/images/nosologies.png'/>
                 </div>

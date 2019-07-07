@@ -15,4 +15,10 @@ a{
   /* grid-gap: 1px; */
 }
 
-
+.app-wrapper-content{
+  grid-area: c;
+  background-color: rgb(255, 255, 255);
+  padding: 1em;
+  border-top-left-radius: 50%;
+  /* margin: 0 auto; */
+}

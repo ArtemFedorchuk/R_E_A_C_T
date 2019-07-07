@@ -1,0 +1,18 @@
+.dialog{
+    position: relative;   
+}
+.dialog h1{
+    color: chocolate;
+    margin: 0 auto;
+    padding: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.dialog__messages{
+    padding: 50px;
+    margin: 0 auto;
+}
+.dialog__messages-item{
+    
+}
