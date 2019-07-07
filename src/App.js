@@ -6,6 +6,7 @@ import Navbar from './../src/components/Navbar/Navbar';
 import Profile from './../src/components/Profile/Profile';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Dialog from './components/Dialog/Dialog';
+import News from './components/News/News';
 
 
 const App = (props) => {
@@ -17,6 +18,7 @@ const App = (props) => {
             <div class="app-wrapper-content">
               <Route path='/dialog/' component={Dialog} />
               <Route path='/profile/' component={Profile} />
+              <Route path='/new/' component={News} />
             </div>
         </div>
       </BrowserRouter>

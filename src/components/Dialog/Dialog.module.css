@@ -3,16 +3,25 @@
 }
 .dialog h1{
     color: chocolate;
-    margin: 0 auto;
+    margin-top: 50px;
     padding: 100px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%); 
 }
 .dialog__messages{
-    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 50px; */
     margin: 0 auto;
+    padding-top: 100px;
 }
-.dialog__messages-item{
-    
+.dialog__messages_item{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    background: rgb(255, 155, 155);
+    margin-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
