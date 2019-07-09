@@ -1,30 +1,63 @@
-.dialog_Wraper{
+.dialog_Wraper {
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
 
-.dialog{
-    position: relative;   
+.dialog {
+    position: relative;
 }
-.dialog h1{
+
+.dialog h1 {
     color: chocolate;
     margin-top: 50px;
     padding: 100px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
-.dialog__messages{
+
+.dialog__messages {
     /* padding: 50px; */
     margin: 0 auto;
     padding-top: 100px;
 }
-.dialog__messages_item{
-    width: 140px;
-    height: 190px;
+
+.dialog__messages_item {
+    width: 150px;
+    height: auto;
     padding: 10px;
     background: rgb(255, 155, 155);
     margin-bottom: 15px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
+.dialog__messages_item h4 {
+    font-size: 14px;
+    color: black
+}
+
+.message_item {
+    background: rgba(255, 0, 0, 0.178)
+}
+
+.message_item i {
+    display: block;
+    color: rgb(134, 4, 4);
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    text-transform: lowercase;
+}
+
+.dialog a:hover {
+    color: rgb(31, 159, 217);
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+
+/* .active_dialog{
+    transform: translateY(250px);
+    transition: .5s ease;
+} */

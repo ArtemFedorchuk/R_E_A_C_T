@@ -13,7 +13,7 @@ const Profile = () =>{
                 {/* <hr/> */}
                 <div className={p.information}>
                     <div className={p.logo}>
-                        <img src='https://s.tcdn.co/a5a/fe4/a5afe471-fd42-39af-9412-f4a690f0179c/8.png'/>
+                        <img src='https://cdn.segodnya.ua/img/article/11212/90_ls.1520759066.jpg'/>
                     </div>
                     <div className={p.information__description}>
                         <h3>Vasso Kolbasso</h3>

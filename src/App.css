@@ -1,24 +1,23 @@
-body{
-  background-color: black
+body {
+    background-color: black
 }
 
-a{
-  text-decoration: none;
-  list-style: none;
+a {
+    text-decoration: none;
+    list-style: none;
 }
 
-.app-wrapper{
-  display: grid;
-  grid-template-areas: 'h h'
-                       'n c';
-  grid-template-columns: 1.5fr 13fr;
-  /* grid-gap: 1px; */
+.app-wrapper {
+    display: grid;
+    grid-template-areas: 'h h' 'n c';
+    grid-template-columns: 1.5fr 13fr;
+    /* grid-gap: 1px; */
 }
 
-.app-wrapper-content{
-  grid-area: c;
-  background-color: rgb(255, 255, 255);
-  padding: 1em;
-  border-top-left-radius: 50%;
-  /* margin: 0 auto; */
+.app-wrapper-content {
+    grid-area: c;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-top-left-radius: 50%;
+    /* margin: 0 auto; */
 }

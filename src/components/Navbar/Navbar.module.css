@@ -1,10 +1,10 @@
-.nav{
+.nav {
     grid-area: n;
     background-color: rgb(0, 0, 0);
     padding: 1em;
-  }
-  
-  a{
+}
+
+a {
     display: block;
     color: white;
     font-size: 20px;
@@ -14,14 +14,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
     letter-spacing: 4px;
-  }
-  
-  a:hover{
+}
+
+a:hover {
     color: rgb(31, 159, 217);
     font-size: 22px;
     letter-spacing: 5px;
-  }
+}
 
-  .activeLink{
+.activeLink {
     color: rgb(31, 159, 217);
-  }
+}
