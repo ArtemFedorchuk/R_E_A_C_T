@@ -21,7 +21,7 @@
     font-size: 22px;
     letter-spacing: 5px;
   }
-  
-  .nav__item_active{
-    color: rgb(6, 108, 155);
+
+  .activeLink{
+    color: rgb(31, 159, 217);
   }

@@ -7,6 +7,8 @@ import Profile from './../src/components/Profile/Profile';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Dialog from './components/Dialog/Dialog';
 import News from './components/News/News';
+import Music from './components/Music/Music';
+import Setting from './components/Setting/Setting';
 
 
 const App = (props) => {
@@ -16,9 +18,11 @@ const App = (props) => {
           <Header />
           <Navbar />
             <div class="app-wrapper-content">
-              <Route path='/dialog/' component={Dialog} />
-              <Route path='/profile/' component={Profile} />
-              <Route path='/new/' component={News} />
+              <Route path='/dialog' component={Dialog} />
+              <Route path='/profile' component={Profile} />
+              <Route path='/news' component={News} />
+              <Route path='/music' component={Music} />
+              <Route path='/setting' component={Setting} />
             </div>
         </div>
       </BrowserRouter>

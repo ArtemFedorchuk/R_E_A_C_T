@@ -7,6 +7,7 @@ const News = (prorps) => {
             <div className={n.news}>
                 <h1>News</h1>
                 <img src="http://gloria-mur.ru/wp-content/uploads/2017/05/avatar1-740x463.jpg" alt="cat"/>
+                <p>This is my News!</p>
             </div>
         </div>
     )

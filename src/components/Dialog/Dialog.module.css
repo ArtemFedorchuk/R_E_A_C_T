@@ -1,3 +1,8 @@
+.dialog_Wraper{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
 .dialog{
     position: relative;   
 }
@@ -10,15 +15,13 @@
     transform: translate(-50%, -50%); 
 }
 .dialog__messages{
-    display: flex;
-    justify-content: space-around;
     /* padding: 50px; */
     margin: 0 auto;
     padding-top: 100px;
 }
 .dialog__messages_item{
-    width: 200px;
-    height: 300px;
+    width: 140px;
+    height: 190px;
     padding: 10px;
     background: rgb(255, 155, 155);
     margin-bottom: 15px;
