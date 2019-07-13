@@ -1,0 +1,12 @@
+.message_item {
+    background: rgba(255, 0, 0, 0.178)
+}
+
+.message_item i {
+    display: block;
+    color: rgb(134, 4, 4);
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    text-transform: lowercase;
+}
