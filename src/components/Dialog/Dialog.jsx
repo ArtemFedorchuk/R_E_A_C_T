@@ -4,15 +4,22 @@ import DialogAuthor from './DialogAuthor/DialogAuthor';
 import Message from './Message/Message';
 // import { NavLink } from 'react-router-dom';
 
+let DialogData = [
+    {id : 1, name: 'Vasso'},
+    {id : 2, name: 'Murces'},
+    {id : 3, name: 'Adriano'},
+    {id : 4, name: 'Victor'}
+];
+
 const Dialog = (prorps) => {
     return (
         <div className={d.dialog_Wraper}>
             <div className={d.dialog}>
                 <div className={d.dialog__messages}>
-                    <DialogAuthor name='Vasso' id='1' />
-                    <DialogAuthor name='Murces' id='2' />
-                    <DialogAuthor name='Adriano' id='3' />
-                    <DialogAuthor name='Victor' id='4' />
+                    <DialogAuthor name={DialogData[0].name} id={DialogData[0].id} />
+                    <DialogAuthor name={DialogData[0].name} id={DialogData[1].id} />
+                    <DialogAuthor name={DialogData[0].name} id={DialogData[2].id} />
+                    <DialogAuthor name={DialogData[0].name} id={DialogData[3].id} />
                 </div>
             </div>
 
