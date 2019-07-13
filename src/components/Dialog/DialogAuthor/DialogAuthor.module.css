@@ -1,0 +1,14 @@
+.dialog__messages_item {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    background: rgb(255, 155, 155);
+    margin-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dialog__messages_item h4 {
+    font-size: 14px;
+    color: black
+}

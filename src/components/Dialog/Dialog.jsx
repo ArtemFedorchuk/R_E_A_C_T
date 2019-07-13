@@ -1,39 +1,17 @@
 import React from 'react';
 import d from './../Dialog/Dialog.module.css'
-import { NavLink } from 'react-router-dom';
+import DialogAuthor from './DialogAuthor/DialogAuthor';
+// import { NavLink } from 'react-router-dom';
 
 const Dialog = (prorps) => {
     return (
         <div className={d.dialog_Wraper}>
             <div className={d.dialog}>
                 <div className={d.dialog__messages}>
-                    <NavLink to='/message_item/1' >
-                        <div className={d.dialog__messages_item}>
-                            <img src="https://pixelbox.ru/wp-content/uploads/2018/02/anonymous_steam_avatars-1-1.jpg" alt="avatar" />
-                            <h4>Ivan Durak</h4>
-                        </div>
-                    </NavLink>
-
-                    <NavLink to='/message_item/2' >
-                        <div className={d.dialog__messages_item}>
-                            <img src="https://pixelbox.ru/wp-content/uploads/2018/02/anonymous_steam_avatars-1-1.jpg" alt="avatar" />
-                            <h4>Igor Pupkin</h4>
-                        </div>
-                    </NavLink>
-
-                    <NavLink to='/message_item/3' >
-                        <div className={d.dialog__messages_item}>
-                            <img src="https://pixelbox.ru/wp-content/uploads/2018/02/anonymous_steam_avatars-1-1.jpg" alt="avatar" />
-                            <h4>Anton Savok</h4>
-                        </div>
-                    </NavLink>
-
-                    <NavLink to='/message_item/4' >
-                        <div className={d.dialog__messages_item}>
-                            <img src="https://pixelbox.ru/wp-content/uploads/2018/02/anonymous_steam_avatars-1-1.jpg" alt="avatar" />
-                            <h4>Victor Blud</h4>
-                        </div>
-                    </NavLink>
+                    <DialogAuthor name='Vasso' id ='1' />
+                    <DialogAuthor name='Murces' id ='2' />
+                    <DialogAuthor name='Adriano' id ='3' />
+                    <DialogAuthor name='Victor' id ='4' />
                 </div>
             </div>
 

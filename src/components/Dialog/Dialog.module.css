@@ -22,7 +22,8 @@
     padding-top: 100px;
 }
 
-.dialog__messages_item {
+
+/* .dialog__messages_item {
     width: 150px;
     height: auto;
     padding: 10px;
@@ -35,7 +36,7 @@
 .dialog__messages_item h4 {
     font-size: 14px;
     color: black
-}
+} */
 
 .message_item {
     background: rgba(255, 0, 0, 0.178)
