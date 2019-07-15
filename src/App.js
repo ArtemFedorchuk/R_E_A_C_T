@@ -12,13 +12,16 @@ import Setting from './components/Setting/Setting';
 
 
 const App = (props) => {
+
   return (
       <BrowserRouter>
+      {console.log(props)}
+
         <div className="app-wrapper">
           <Header />
           <Navbar />
             <div class="app-wrapper-content">
-              <Route path='/dialog' component={Dialog} />
+              <Route path='/dialog' render={(props) => <Dialog arr={props} /> } />
               <Route path='/profile' component={Profile} />
               <Route path='/news' component={News} />
               <Route path='/music' component={Music} />
@@ -28,5 +31,4 @@ const App = (props) => {
       </BrowserRouter>
   );
 }
-
 export default App;
