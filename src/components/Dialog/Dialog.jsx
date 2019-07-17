@@ -6,25 +6,24 @@ import Message from './Message/Message';
 
 
 const Dialog = (props) => {
-    console.log(props)
 
     
     // Функция которая мапит массив диалогов в новый массив
-    // let Dialogs = props.map( (d) => <DialogAuthor name={d.name} id={d.id} />)
+    let Dialogs = props.dialogArr.map( (d) => <DialogAuthor name={d.name} id={d.id} />)
 
     // Функция которая мапит массив сообщений в новый массив
-    // let Messages = props.map( (m) => <Message text={m.text} />)
+    let Messages = props.messageArr.map( (m) => <Message text={m.text} />)
     
     return (
         <div className={d.dialog_Wraper}>
             <div className={d.dialog}>
                 <div className={d.dialog__messages}>
-                    {/* {Dialogs} */}
+                    {Dialogs}
                 </div>
             </div>
 
             <div className={d.message}>
-                {/* {Messages} */}
+                {Messages}
             </div>
         </div>
     )
