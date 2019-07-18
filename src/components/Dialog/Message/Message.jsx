@@ -5,7 +5,17 @@ const Message = (props) => {
     return (
         <div>
             <div className={m.message_item}>
-                <i>{props.text}</i>
+                <div>
+                    <b>Author</b>
+                </div>
+                <div className={m.text_wrap}>
+                    <div className={m.circle}></div>
+                    <i>{props.text}</i>
+                </div>
+                <div className={m.text_wrap__two}>
+                    <div className={m.circle_two}></div>
+                    <i>{props.text}</i>
+                </div>
             </div>
         </div>
     )

@@ -1,19 +1,6 @@
-.dialog_Wraper {
+.dialog_wraper {
     display: grid;
     grid-template-columns: 2fr 10fr;
-}
-
-.dialog {
-    position: relative;
-}
-
-.dialog h1 {
-    color: chocolate;
-    margin-top: 50px;
-    padding: 100px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .dialog__messages {

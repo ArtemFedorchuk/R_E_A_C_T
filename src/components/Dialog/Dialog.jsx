@@ -7,15 +7,15 @@ import Message from './Message/Message';
 
 const Dialog = (props) => {
 
-    
+
     // Функция которая мапит массив диалогов в новый массив
-    let Dialogs = props.dialogArr.map( (d) => <DialogAuthor name={d.name} id={d.id} />)
+    let Dialogs = props.state.dialogs.map((d) => <DialogAuthor name={d.name} id={d.id} />)
 
     // Функция которая мапит массив сообщений в новый массив
-    let Messages = props.messageArr.map( (m) => <Message text={m.text} />)
-    
+    let Messages = props.state.messages.map((m) => <Message text={m.text} />)
+
     return (
-        <div className={d.dialog_Wraper}>
+        <div className={d.dialog_wraper}>
             <div className={d.dialog}>
                 <div className={d.dialog__messages}>
                     {Dialogs}
