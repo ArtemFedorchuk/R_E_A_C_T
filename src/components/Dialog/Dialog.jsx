@@ -16,13 +16,12 @@ const Dialog = (props) => {
 
     return (
         <div className={d.dialog_wraper}>
-            <div className={d.dialog}>
-                <div className={d.dialog__messages}>
-                    {Dialogs}
-                </div>
+
+            <div>
+                {Dialogs}
             </div>
 
-            <div className={d.message}>
+            <div>
                 {Messages}
             </div>
         </div>
