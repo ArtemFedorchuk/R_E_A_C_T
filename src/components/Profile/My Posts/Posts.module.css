@@ -3,12 +3,12 @@
 }
 
 input{
-  width: 60%;
-  background: rgb(178, 177, 252);
+  width: 30%;
+  background: rgba(178, 177, 252, 0.692);
   border: 1px solid rgb(62, 59, 247);
   border-radius: 5px;
   padding: 10px;
-  color: rgb(245, 0, 0);
+  color: rgb(33, 0, 182);
   font-size: 18px;
   height: 60px;
   margin-bottom: 20px;

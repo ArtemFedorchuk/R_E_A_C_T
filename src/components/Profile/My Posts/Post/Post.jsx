@@ -12,6 +12,8 @@ const Post = (props) =>{
                 </div>
                 
                 <p><b>{props.author}</b></p>
+
+                
                 
                 
             </div>

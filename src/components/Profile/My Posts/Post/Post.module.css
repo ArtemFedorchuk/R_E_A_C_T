@@ -1,5 +1,6 @@
 .post{
   display: flex;
+  width: 30%;
  margin-top: 40px;
  padding: 10px;
  border: 1px dashed #000
