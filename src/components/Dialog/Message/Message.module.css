@@ -57,3 +57,10 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
+.message_item textarea{
+    width: 97.7%;
+    border: 1px solid rgb(134, 4, 4);
+    padding: 10px;
+    font-size: 18px;
+}

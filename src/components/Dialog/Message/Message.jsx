@@ -16,6 +16,9 @@ const Message = (props) => {
                     <div className={m.circle_two}></div>
                     <i>{props.text}</i>
                 </div>
+                <div>
+                    <textarea name="message" id="" rows="4" placeholder='Сообщение'></textarea>
+                </div>
             </div>
         </div>
     )

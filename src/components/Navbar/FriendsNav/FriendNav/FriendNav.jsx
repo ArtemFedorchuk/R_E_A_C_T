@@ -1,7 +1,7 @@
 import React from 'react'
-import f from './../Friend/Friend.module.css'
+import f from './../FriendNav/FriendNav.module.css'
 
-const Friend = (props) => {
+const FriendNav = (props) => {
     return (
         <div>
             <div className={f.user}>
@@ -11,4 +11,4 @@ const Friend = (props) => {
     )
 }
 
-export default Friend
+export default FriendNav

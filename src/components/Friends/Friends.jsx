@@ -7,13 +7,8 @@ const Friends = (props) => {
     return(
         <div>
             <div className={f.friends}>
-            <h1>***</h1>
-                <NavLink to="/Friends" activeClassName={f.activeLink}>Friends</NavLink>
-                <div className={f.friend__wraper}>
-                    <Friend />
-                    <Friend />
-                    <Friend />
-                </div>
+            <h1>Friend</h1>
+            
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import f from './../FriendsNav/FriendsNav.module.css'
 import { NavLink } from "react-router-dom"
-import Friend from './Friend/Friend'
+import Friend from './FriendNav/FriendNav'
 
 const FriendsNav = (props) => {
     return(

@@ -1,3 +1,13 @@
+.friends{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.friends h1{
+    font-size: 35px;
+}
+
 .activeLink {
     color: rgb(31, 159, 217);
 }
@@ -20,9 +30,6 @@ a:hover {
     letter-spacing: 5px;
 }
 
-.friends{
-    margin-top: 35px;
-}
 .friends h1{
     color: red
 }
