@@ -9,7 +9,7 @@ import Dialog from './components/Dialog/Dialog';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Setting from './components/Setting/Setting';
-import Friends from './components/Friends/Friends'
+import Friends from './components/Friends/Friends'; 
 
 
 const App = (props) => {
@@ -21,9 +21,8 @@ const App = (props) => {
           <Header />
           <Navbar />
             <div class="app-wrapper-content">
-              {/* <Route path='/dialog' render={() => <Dialog test='true'/>}/> */}
               <Route path='/dialog' render={ () => <Dialog {...props} /> } />
-              <Route path='/profile' component={Profile} />
+              <Route path='/profile' render={ () => <Profile {...props}/>} />
               <Route path='/news' component={News} />
               <Route path='/music' component={Music} />
               <Route path='/setting' component={Setting} />

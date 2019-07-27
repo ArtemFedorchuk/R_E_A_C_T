@@ -4,7 +4,8 @@ import Posts from './My Posts/Posts';
 
 
 
-const Profile = () =>{
+const Profile = (props) =>{
+    // console.log(props.state)
     return(
         <section>
                 <div className={p.content__img}>
@@ -24,7 +25,7 @@ const Profile = () =>{
                         <p>Веб сайт: Sabina.ua</p>
                     </div>
                 </div>
-            <Posts />
+            <Posts addPost={props.addPost} state={props.state} />
         </section>
     );
 }

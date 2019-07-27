@@ -5,7 +5,7 @@ import Message from './Message/Message';
 // import { NavLink } from 'react-router-dom';
 
 
-const Dialog = (props) => {
+const Dialog = (props) => { 
 
 
     // Функция которая мапит массив диалогов в новый массив

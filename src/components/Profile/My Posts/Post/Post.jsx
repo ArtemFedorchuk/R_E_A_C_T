@@ -7,16 +7,15 @@ const Post = (props) =>{
     return(
             <div className={p.post}>
                 <div className='wrap_title'>
-                    <i>{props.title}</i> <br/> <br/>
-                    <img src="https://icons8.com/iconizer/files/Free_pretty_office_Icons_part_4/orig/woman.png" alt=""/>
+                    {/* <i>{props.title}</i> <br/> <br/> */}
+                    <p><b>{props.author}</b></p>
+                    <img src="https://icons8.com/iconizer/files/Free_pretty_office_Icons_part_4/orig/woman.png" alt="icon"/>
                 </div>
-                
-                <p><b>{props.author}</b></p>
-
-                
-                
-                
+                <p>{props.text}</p>
+                {/* <p><b>{props.author}</b></p> */}
+   
             </div>
+            
     );
 }
 
