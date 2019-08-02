@@ -13,7 +13,7 @@ let state = {
         { text: 'Lomnis suscipit, fugit et earum quae neque necessitatibus velit magni?.' },00000
         { text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
     ],
-    // Массив диалогов.
+    // Массив диалогов
     dialogs: [
         { id: 1, name: 'Vasso' },
         { id: 2, name: 'Murces' },
