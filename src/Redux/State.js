@@ -1,5 +1,5 @@
 let state = {
-    // Массив постов.
+    // Массив постов
     posts: [
         { id: 1, message: 'sdfsdgsfdgsg', likeCount: 23, author:'Artem Fedorchuk' },
         { id: 1, message: postMessage, likeCount: 121, author:'Igor Shilov' },
