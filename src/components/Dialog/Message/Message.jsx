@@ -2,6 +2,7 @@ import React from 'react';
 import m from './../Message/Message.module.css';
 
 const Message = (props) => {
+    // debugger
     return (
         <div>
             <div className={m.message_item}>

@@ -6,7 +6,7 @@ import Message from './Message/Message';
 
 
 const Dialog = (props) => { 
-
+debugger
 
     // Функция которая мапит массив диалогов в новый массив
     let Dialogs = props.state.dialogs.map((d) => <DialogAuthor name={d.name} id={d.id} />)

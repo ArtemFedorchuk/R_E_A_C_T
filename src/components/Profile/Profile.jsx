@@ -5,6 +5,7 @@ import Posts from './My Posts/Posts';
 
 
 const Profile = (props) =>{
+    // debugger
     // console.log(props.state)
     return(
         <section>
