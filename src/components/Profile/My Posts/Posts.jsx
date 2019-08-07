@@ -32,8 +32,8 @@ const Posts = (props) => {
 
             {posts}
             <Post title='First Post' state={props.state} />
-            <Post title='Two Post' state={props.state} />
-            <Post title='Free Post' state={props.state} />
+            {/* <Post title='Two Post' state={props.state} /> */}
+            {/* <Post title='Free Post' state={props.state} /> */}
         </div>
     );
 }

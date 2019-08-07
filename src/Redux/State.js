@@ -10,7 +10,7 @@ let state = {
     messages: [
         { text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloribus, deserunt unde impedit.' },
         { text: 'Hello my friend Artem.' },
-        { text: 'Lomnis suscipit, fugit et earum quae neque necessitatibus velit magni?.' },00000
+        { text: 'Lomnis suscipit, fugit et earum quae neque necessitatibus velit magni?.' },
         { text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
     ],
     // Массив диалогов
