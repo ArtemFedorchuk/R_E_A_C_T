@@ -15,9 +15,7 @@ debugger
     let Messages = props.state.messages.map((m) => <Message text={m.text} />)
 
     return (
-        <div className={d.dialog + '' + d.active}>
-            <NavLink to={'/dialog/' + props.id}>{props.name}</NavLink>
-        </div>
+
 
         <div className={d.dialog_wraper}>
 
