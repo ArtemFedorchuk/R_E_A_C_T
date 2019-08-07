@@ -6,6 +6,10 @@ const Friend = (props) => {
         <div>
             <div className={f.user}>
                 <img src="http://klakson18.ru/wp-content/uploads/2016/12/06.png" alt="user"/>
+                <p>name</p>
+            </div>
+            <div>
+                <p>name</p>
             </div>
         </div>
     )

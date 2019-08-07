@@ -4,7 +4,7 @@ import p from './Post.module.css';
 
 
 const Post = (props) =>{
-    // debugger
+    
 
     console.log(props)
     return(

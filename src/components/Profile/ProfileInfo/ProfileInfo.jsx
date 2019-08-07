@@ -1,0 +1,31 @@
+import React from 'react'
+import p from './../ProfileInfo/ProfileInfo.module.css'
+
+const ProfileInfo = (props) => {
+    // debugger
+    // console.log()
+
+    return(
+        <div>
+            <div className={p.content__img}>
+                    <img src='http://www.generium.ru/images/nosologies.png'/>
+                </div>
+                {/* <hr/> */}
+                <div className={p.information}>
+                    <div className={p.logo}>
+                        <img src='https://cdn.segodnya.ua/img/article/11212/90_ls.1520759066.jpg'/>
+                    </div>
+                    <div className={p.information__description}>
+                        <h3>{props.state.profileInfo[0].name}</h3>
+                        <p>Специальность: {props.state.profileInfo[1].special}</p>
+                        <p>Дата рождения: {props.state.profileInfo[2].date}</p>
+                        <p>Город: {props.state.profileInfo[3].town}</p>
+                        <p>Образование: {props.state.profileInfo[4].schoоl}</p>
+                        <p>Веб сайт: {props.state.profileInfo[5].website}</p>
+                    </div>
+                </div>
+        </div>
+    )
+}
+
+export default ProfileInfo

@@ -19,6 +19,15 @@ let state = {
         { id: 2, name: 'Murces' },
         { id: 3, name: 'Adriano' },
         { id: 4, name: 'Victor' }
+    ],
+    // Информация профиля
+    profileInfo: [
+        {name : 'Vasso Kolbasso'},
+        {special : 'Doctor-reanimate'},
+        {date : '27.08.1990'},
+        {town : 'California'},
+        {schoоl : 'Harvard'},
+        {website : 'stroyukrinvest.com'}
     ]
 }
 
