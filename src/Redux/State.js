@@ -28,6 +28,16 @@ let state = {
         {town : 'California'},
         {schoоl : 'Harvard'},
         {website : 'stroyukrinvest.com'}
+    ],
+    // Друзья
+    friends: [
+        {name : 'Artem'},
+        {name : 'Victor'},
+        {name : 'Lucas'},
+        {name : 'Sivic'},
+        {name : 'Nicolas'},
+        // {name : 'Duglas'},
+        {name : 'Djo'}
     ]
 }
 

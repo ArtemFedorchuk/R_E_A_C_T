@@ -4,7 +4,7 @@ import p from './../ProfileInfo/ProfileInfo.module.css'
 const ProfileInfo = (props) => {
     // debugger
     // console.log()
-
+ 
     return(
         <div>
             <div className={p.content__img}>

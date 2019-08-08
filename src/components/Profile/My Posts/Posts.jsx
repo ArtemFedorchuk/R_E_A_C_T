@@ -9,7 +9,6 @@ const Posts = (props) => {
     // Функция которая мапит массив постов в новый массив
     let posts = props.state.posts.map((p) => <post text={p.message} author={p.auhor} />)
 
-
     let newPostElement = React.createRef();
 
     let addPost = () => {

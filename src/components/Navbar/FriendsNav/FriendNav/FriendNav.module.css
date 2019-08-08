@@ -1,5 +1,6 @@
 .user{
     margin-top: 15px;
+    padding: 3px;
 }
 
 .user img{
@@ -7,4 +8,9 @@
     border-radius: 50%;
     background: rgb(31, 159, 217);
     padding: 5px;
+}
+
+.user p{
+    color: white;
+    font-size: 14px;
 }

@@ -23,11 +23,9 @@ a:hover {
 .friends{
     margin-top: 35px;
 }
-.friends h1{
-    color: red
-}
 
 .friend__wraper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }

@@ -1,41 +1,9 @@
+
 .friends{
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
+    text-align: center
 }
-
 .friends h1{
-    font-size: 35px;
-}
-
-.activeLink {
-    color: rgb(31, 159, 217);
-}
-
-/* a {
-    display: block;
-    color: white;
-    font-size: 20px;
-    font-family: serif;
-    text-transform: uppercase;
-    transition: 0.5s ease;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    letter-spacing: 4px;
-} */
-
-a:hover {
-    color: rgb(31, 159, 217);
-    font-size: 22px;
-    letter-spacing: 5px;
-}
-
-.friends h1{
-    color: red
-}
-
-.friend__wraper{
-    display: flex;
-    justify-content: space-around;
+    font-size: 45px;
+    color: brown
 }
 

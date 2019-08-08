@@ -1,15 +1,11 @@
 import React from 'react'
 import f from './../Friends/Friends.module.css'
-import { NavLink } from "react-router-dom"
-import Friend from './Friend/Friend'
 
-const Friends = (props) => {
+const Friends = () => {
     return(
-        <div>
-            <div className={f.friends}>
-                <h1>Friend</h1>
-            </div>
+        <div className={f.friends}>
+            <h1>my Friends</h1>
         </div>
     )
-} 
+}
 export default Friends

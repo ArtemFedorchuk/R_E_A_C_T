@@ -4,15 +4,16 @@ import { NavLink } from "react-router-dom"
 import Friend from './FriendNav/FriendNav'
 
 const FriendsNav = (props) => {
+    // debugger
+    let Friends = props.state.friends.map( (f) => <Friend name={f.name} />)
     return(
         <div>
             <div className={f.friends}>
             <hr/>
                 <NavLink to="/Friends" activeClassName={f.activeLink}>Friends</NavLink>
                 <div className={f.friend__wraper}>
-                    <Friend />
-                    <Friend />
-                    <Friend />
+                    {/* <Friend /> */}
+                    {Friends}
                 </div>
             </div>
         </div>
