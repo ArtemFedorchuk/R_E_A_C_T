@@ -8,7 +8,7 @@ import {addPost} from './Redux/State'
 
 
 
-ReactDOM.render( < App state={state}  addPost={addPost} / > , document.getElementById('root'));
+ReactDOM.render( < App state={state}  addPost={addPost} / > , document.getElementById('root')); 
 
 
 // If you want your app to work offline and load faster, you can change
