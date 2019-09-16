@@ -39,7 +39,7 @@ let state = {
         // {name : 'Duglas'},
         {name : 'Djo'}
     ]
-}
+} 
 
 export let addPost = (postMessage) => {
     // debugger
