@@ -2,6 +2,9 @@
     background: rgba(255, 0, 0, 0.178);
     margin-top: 50px;
     width: 70%;
+    box-shadow: 0px 0px 15px black;
+    border-top-left-radius: 10px;
+
 }
 
 .text_wrap{
@@ -39,9 +42,7 @@
 .message_item i {
     display: block;
     color: rgb(134, 4, 4);
-    padding: 30px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    padding: 20px;
     text-transform: lowercase;
 }
 
@@ -52,15 +53,14 @@
 .message_item b{
     display: block;
     width: 80px;
-    padding: 20px;
-    background: rgb(184, 18, 18);
-    border-top-right-radius: 10px;
+    padding: 5px;
+    background: rgb(202, 136, 136);
     border-top-left-radius: 10px;
 }
 
 .message_item textarea{
-    width: 97.7%;
-    border: 1px solid rgb(134, 4, 4);
+    display: block;
+    width: 97%;
     padding: 10px;
-    font-size: 18px;
+    /* font-size: 18px; */
 }

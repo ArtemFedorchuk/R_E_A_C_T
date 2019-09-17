@@ -13,6 +13,7 @@ import Friends from './components/Friends/Friends';
 
 
 const App = (props) => {
+  // debugger
 
   return (
       <BrowserRouter>

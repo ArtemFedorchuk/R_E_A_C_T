@@ -1,17 +1,17 @@
 let state = {
     // Массив постов
     posts: [
-        { id: 1, message: 'sdfsdgsfdgsg', likeCount: 23, author:'Artem Fedorchuk' },
-        { id: 1, message: postMessage, likeCount: 121, author:'Igor Shilov' },
-        { id: 1, message: postMessage, likeCount: 16, author:'Alexandr Zelensky' },
-        { id: 1, message: postMessage, likeCount: 133, author:'Vitalino Tarantino' }
+        { id: 1, message: 'sdfsdgsfdgsg', likeCount: 23, author: 'Artem Fedorchuk' },
+        { id: 1, message: postMessage, likeCount: 121, author: 'Igor Shilov' },
+        { id: 1, message: postMessage, likeCount: 16, author: 'Alexandr Zelensky' },
+        { id: 1, message: postMessage, likeCount: 133, author: 'Vitalino Tarantino' }
     ],
     // Массив сообщений.
     messages: [
-        { text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloribus, deserunt unde impedit.' },
+        { text: 'Hi my brother' },
         { text: 'Hello my friend Artem.' },
-        { text: 'Lomnis suscipit, fugit et earum quae neque necessitatibus velit magni?.' },
-        { text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
+        { text: 'Lomnis suscipit, fugit et earum quae neque necessitatibus velit magni?.' }
+        // { text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
     ],
     // Массив диалогов
     dialogs: [
@@ -22,24 +22,24 @@ let state = {
     ],
     // Информация профиля
     profileInfo: [
-        {name : 'Vasso Kolbasso'},
-        {special : 'Doctor-reanimate'},
-        {date : '27.08.1990'},
-        {town : 'California'},
-        {schoоl : 'Harvard'},
-        {website : 'stroyukrinvest.com'}
+        { name: 'Vasso Kolbasso' },
+        { special: 'Doctor-reanimate' },
+        { date: '27.08.1990' },
+        { town: 'California' },
+        { schoоl: 'Harvard' },
+        { website: 'stroyukrinvest.com' }
     ],
     // Друзья
     friends: [
-        {name : 'Artem'},
-        {name : 'Victor'},
-        {name : 'Lucas'},
-        {name : 'Sivic'},
-        {name : 'Nicolas'},
+        { name: 'Artem' },
+        { name: 'Victor' },
+        { name: 'Lucas' },
+        { name: 'Sivic' },
+        { name: 'Nicolas' },
         // {name : 'Duglas'},
-        {name : 'Djo'}
+        { name: 'Djo' }
     ]
-} 
+}
 
 export let addPost = (postMessage) => {
     // debugger
@@ -50,5 +50,5 @@ export let addPost = (postMessage) => {
     }
     state.posts.push(newPost)
 }
-
+// export default addPost;
 export default state;
