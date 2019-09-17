@@ -10,7 +10,7 @@ const DialogAuthor = (props) => {
 
         <div>
             <NavLink to={path} >
-                <div className={d.dialog__messages_item}>
+                <div className={d.dialog__messages_item}> 
                     <img src="https://pixelbox.ru/wp-content/uploads/2018/02/anonymous_steam_avatars-1-1.jpg" alt="avatar" />
                     <h4>{props.name}</h4>
                 </div>
