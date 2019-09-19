@@ -45,7 +45,7 @@ let state = {
     },
 
     settingPage: {
-
+        // setting
     },
 
     navbar: {
