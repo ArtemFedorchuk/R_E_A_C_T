@@ -41,19 +41,19 @@ let state = {
     },
 
     musicPage: {
-
+        // content music
     },
 
     settingPage: {
 
     },
-    
+
     navbar: {
         friends: [
             { name: 'Artem' },
             { name: 'Victor' },
             { name: 'Lucas' },
-            { name: 'Sivic' },
+            { name: 'Valera' },
             { name: 'Nicolas' },
             // {name : 'Duglas'},
             { name: 'Djo' }
