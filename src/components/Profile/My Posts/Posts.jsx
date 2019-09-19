@@ -7,7 +7,7 @@ import Post from './Post/Post';
 const Posts = (props) => {
     // debugger
     // Функция которая мапит массив постов в новый массив
-    let posts = props.state.posts.map((p) => <post text={p.message} author={p.auhor} />)
+    let posts = props.state.profilePage.posts.map((p) => <post text={p.message} author={p.auhor} />)
 
     let newPostElement = React.createRef();
 
