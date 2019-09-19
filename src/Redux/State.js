@@ -37,7 +37,7 @@ let state = {
     },
 
     newsPage: {
-
+        // content news
     },
 
     musicPage: {
