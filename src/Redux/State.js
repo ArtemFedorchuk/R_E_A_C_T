@@ -1,3 +1,5 @@
+import {renderEntireTree} from './../render'
+
 let state = {
 
     profilePage: {
@@ -12,10 +14,10 @@ let state = {
         ],
         // Массив постов
         posts: [
-            { id: 1, message: 'sdfsdgsfdgsg', likeCount: 23, author: 'Artem Fedorchuk' },
-            { id: 1, message: postMessage, likeCount: 121, author: 'Igor Shilov' },
-            { id: 1, message: postMessage, likeCount: 16, author: 'Alexandr Zelensky' },
-            { id: 1, message: postMessage, likeCount: 133, author: 'Vitalino Tarantino' }
+            // { id: 1, message: 'sdfsdgsfdgsg', likeCount: 23, author: 'Artem Fedorchuk' },
+            // { id: 1, message: postMessage, likeCount: 121, author: 'Igor Shilov' },
+            // { id: 1, message: postMessage, likeCount: 16, author: 'Alexandr Zelensky' },
+            // { id: 1, message: postMessage, likeCount: 133, author: 'Vitalino Tarantino' }
         ]
     },
 
