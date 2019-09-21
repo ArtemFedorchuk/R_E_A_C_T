@@ -5,7 +5,11 @@ import Header from './../src/components/Header/Header';
 import Navbar from './../src/components/Navbar/Navbar';
 import Profile from './../src/components/Profile/Profile';
 import {BrowserRouter, Route} from 'react-router-dom';
-
+import Dialog from './components/Dialog/Dialog';
+import News from './components/News/News';
+import Music from './components/Music/Music';
+import Setting from './components/Setting/Setting';
+import Friends from './components/Friends/Friends'; 
 
 
 const App = (props) => {
@@ -26,6 +30,7 @@ const App = (props) => {
             </div>
         </div>
         
+
       
   ); 
 }
