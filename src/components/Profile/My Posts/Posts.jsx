@@ -11,7 +11,6 @@ const Posts = (props) => {
     let posts = props.state.profilePage.posts.map((p) => <Post text={p.message} author={p.auhor} />)
 
     let newPostElement = React.createRef();
-    let Dispatcher = require('react-dispatcher');
 
     let addPost = () => {
         
@@ -19,6 +18,14 @@ const Posts = (props) => {
         // console.log(text)
         props.addPost(text)
         newPostElement.current.value = ''
+    }
+
+    let changeText = () => {
+        
+        let text = newPostElement.current.value   
+        // props.onChangeText(text)
+        console.log(text)
+
     }
 
     // store.dispach(addPost)
@@ -29,7 +36,7 @@ const Posts = (props) => {
             <div className="post__send">
                 {/* <hr/> */}
                 {/* <h4>My post</h4> */}
-                <input type="textarea" ref={newPostElement} placeholder="Напишите пост" value={props.newPostText} /><br />
+                <input type="textarea" ref={newPostElement} placeholder="Напишите пост" onChange={changeText} value={props.state.profilePage.newPostText} /><br />
                 <button type="submit" onClick={addPost}>Send</button>
             </div>
             <hr />

@@ -18,7 +18,9 @@ let state = {
             // { id: 1, message: postMessage, likeCount: 121, author: 'Igor Shilov' },
             // { id: 1, message: postMessage, likeCount: 16, author: 'Alexandr Zelensky' },
             // { id: 1, message: postMessage, likeCount: 133, author: 'Vitalino Tarantino' }
-        ]
+        ],
+        newPostText: ''
+        
     },
 
     messagesPage: {
@@ -74,5 +76,12 @@ export let addPost = (postMessage) => {
     state.profilePage.posts.push(newPost)
     renderEntireTree(state)
 }
-// export default addPost;
+
+export let onChangeText = (newText) => {
+    // debugger
+    state.profilePage.newPostText = newText
+    renderEntireTree(state)
+}
+
+
 export default state;
