@@ -1,5 +1,4 @@
-import {renderEntireTree} from './../render';
-
+let renderEntireTree = () => console.log('hello')
 let state = {
 
     profilePage: {
@@ -20,7 +19,7 @@ let state = {
             // { id: 1, message: postMessage, likeCount: 133, author: 'Vitalino Tarantino' }
         ],
         newPostText: ''
-        
+
     },
 
     messagesPage: {
@@ -83,5 +82,8 @@ export let onChangeText = (newText) => {
     renderEntireTree(state)
 }
 
+export let subscribe = (subscriber) => {
+    renderEntireTree = subscriber
+}
 
 export default state;

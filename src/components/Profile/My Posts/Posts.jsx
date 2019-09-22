@@ -6,7 +6,7 @@ import Post from './Post/Post';
 
 
 const Posts = (props) => {
-    debugger
+    // debugger
     // Функция которая мапит массив постов в новый массив
     let posts = props.state.profilePage.posts.map((p) => <Post text={p.message} author={p.auhor} />)
 
