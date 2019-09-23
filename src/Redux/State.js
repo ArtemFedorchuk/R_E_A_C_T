@@ -1,5 +1,5 @@
 export let store = {
-    state: {
+    _state: {
 
         profilePage: {
             // Информация профиля
