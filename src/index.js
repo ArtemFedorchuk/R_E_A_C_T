@@ -14,7 +14,7 @@ let renderEntireTree = (state) => {
 
 }
 
-renderEntireTree(store._state)
+renderEntireTree(store._state) 
 store.subscribe(renderEntireTree)
 
 // If you want your app to work offline and load faster, you can change
