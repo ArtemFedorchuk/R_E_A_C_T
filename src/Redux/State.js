@@ -29,7 +29,7 @@ export let store = {
                 { id: 2, name: 'Murces' },
                 { id: 3, name: 'Adriano' },
                 { id: 4, name: 'Victor' }
-            ],
+            ], 
             // Массив сообщений.
             messages: [
                 { text: 'Hi my brother' },
