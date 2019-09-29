@@ -14,20 +14,17 @@ const Posts = (props) => {
 
     let addPost = () => {
         
-        let text = newPostElement.current.value
-        // console.log(text)
-        // props.addPost(text)
-        props.dispatch({ type : 'ADD-POST', postMessage: text})
+        let text = newPostElement.current.value;
+        let action = { type : 'ADD-POST', postMessage: text};
+        props.dispatch(action)
         newPostElement.current.value = ''
     }
 
     let changeText = () => {
         
-        let text = newPostElement.current.value   
-        // props.onChangeText(text)
-        props.dispatch({type : 'ON-CHANGE-TEXT', newText: text})
-        // console.log(text)
-
+        let text = newPostElement.current.value
+        let action = {type : 'ON-CHANGE-TEXT', newText: text};
+        props.dispatch(action)
     }
 
     // store.dispach(addPost)
