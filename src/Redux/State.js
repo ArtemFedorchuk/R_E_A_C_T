@@ -89,7 +89,18 @@ export let store = {
         }
     }
 
+}
 
+export const addPostActionCreator = (text) => {
+    return {
+        type : 'ADD-POST', postMessage: text
+    }
+}
+
+export const changeTextActionCreator = (text) => {
+    return {
+        type : 'ON-CHANGE-TEXT', newText: text
+    }
 }
 
 export default store
