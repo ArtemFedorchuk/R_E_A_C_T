@@ -1,5 +1,5 @@
 .dialog_wraper {
     display: grid;
-    grid-template-columns: 2fr 10fr;
-    margin-top: 150px;
+    grid-template-columns: 3fr 10fr;
+    margin-top: 0px;
 }
