@@ -64,26 +64,44 @@ export let store = {
         }
 
     },
-    renderEntireTree () {
+    renderEntireTree() {
         // console.log('hello')
     },
-    addPost(postMessage) {
-        // debugger
-        let newPost = {
-            id: 5,
-            message: postMessage,
-            likeCount: 45
-        }
-        this._state.profilePage.posts.push(newPost)
-        this.renderEntireTree(this._state)
-    },
-    onChangeText(newText) {
-        this._state.profilePage.newPostText = newText
-        this.renderEntireTree(this._state)
-    },
+    // addPost(postMessage) {
+    //     // debugger
+    //     let newPost = {
+    //         id: 5,
+    //         message: postMessage,
+    //         likeCount: 45
+    //     }
+    //     this._state.profilePage.posts.push(newPost)
+    //     this.renderEntireTree(this._state)
+    // },
+    // onChangeText(newText) {
+    //     this._state.profilePage.newPostText = newText
+    //     this.renderEntireTree(this._state)
+    // },
     subscribe(observer) {
         this.renderEntireTree = observer
+    },
+
+    dispatch(action) {
+        if (action.type === 'ADD-POST') {
+            // debugger
+            let newPost = {
+                id: 5,
+                message: action.postMessage,
+                likeCount: 45
+            }
+            this._state.profilePage.posts.push(newPost)
+            this.renderEntireTree(this._state)
+        } else if (action.type === 'ON-CHANGE-TEXT') {
+            this._state.profilePage.newPostText = action.newText
+            this.renderEntireTree(this._state)
+        }
     }
+
+
 }
 
 export default store
