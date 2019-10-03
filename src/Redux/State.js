@@ -36,7 +36,9 @@ export let store = {
                 { text: 'Hello my friend Artem.' },
                 { text: 'Lomnis suscipit, fugit et earum quae neque necessitatibus velit magni?.' }
                 // { text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' }
-            ]
+            ],
+
+            newMessageBody: ''
         },
 
         newsPage: {
@@ -85,6 +87,10 @@ export let store = {
             this.renderEntireTree(this._state)
         } else if (action.type === 'ON-CHANGE-TEXT') {
             this._state.profilePage.newPostText = action.newText
+            this.renderEntireTree(this._state)
+        } else if(action.type === 'ON-CHANGE-MESSAGE'){
+            this._state.messagesPage.newMessageBody = action.body
+            // this._state.messagesPage.newMessageBody = ''
             this.renderEntireTree(this._state)
         }
     }
