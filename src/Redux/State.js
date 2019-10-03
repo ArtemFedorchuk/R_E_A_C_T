@@ -1,3 +1,6 @@
+import profileReducer from "./profile-Reducer"
+import messageReducer from "./message-Reducer"
+
 const ADD_POST = 'ADD-POST'
 const ON_CHANGE_TEXT = 'ON-CHANGE-TEXT'
 const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY'
@@ -81,27 +84,32 @@ export let store = {
 
     dispatch(action) {
         // debugger
-        if (action.type === ADD_POST) {
-            let newPost = {
-                id: 5,
-                message: action.postMessage,
-                likeCount: 45
-            }
-            this._state.profilePage.posts.push(newPost)
-            this._state.profilePage.newPostText = ''
-            this.renderEntireTree(this._state)
-        } else if (action.type === ON_CHANGE_TEXT) {
-            this._state.profilePage.newPostText = action.newText
-            this.renderEntireTree(this._state)
-        } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
-            this._state.messagesPage.newMessageBody = action.body
-            this.renderEntireTree(this._state)
-        } else if (action.type === SEND_MESSAGE) {
-            let body = this._state.messagesPage.newMessageBody
-            this._state.messagesPage.newMessageBody = ''
-            this._state.messagesPage.messages.push({ text: body })
-            this.renderEntireTree(this._state)
-        }
+
+        this._state.profilePage = profileReducer(this._state.profilePage, action)
+        this._state.messagesPage = messageReducer(this._state.messagesPage, action)
+        this.renderEntireTree(this._state)
+
+        // if (action.type === ADD_POST) {
+        //     let newPost = {
+        //         id: 5,
+        //         message: action.postMessage,
+        //         likeCount: 45
+        //     }
+        //     this._state.profilePage.posts.push(newPost)
+        //     this._state.profilePage.newPostText = ''
+        //     this.renderEntireTree(this._state)
+        // } else if (action.type === ON_CHANGE_TEXT) {
+        //     this._state.profilePage.newPostText = action.newText
+        //     this.renderEntireTree(this._state)
+        // } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
+        //     this._state.messagesPage.newMessageBody = action.body
+        //     this.renderEntireTree(this._state)
+        // } else if (action.type === SEND_MESSAGE) {
+        //     let body = this._state.messagesPage.newMessageBody
+        //     this._state.messagesPage.newMessageBody = ''
+        //     this._state.messagesPage.messages.push({ text: body })
+        //     this.renderEntireTree(this._state)
+        // }
     }
 
 }
