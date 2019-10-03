@@ -17,7 +17,6 @@ const Message = (props) => {
     // Func input text
     let onNewMessageChange = (e) => {
         let body = e.target.value
-        console.log(body)
         props.dispatch(updateNewMessageBodyCreator(body))
     }
     return (
