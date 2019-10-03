@@ -1,8 +1,25 @@
 import React from 'react';
 import m from './../Message/Message.module.css';
+import { sendMessageCreator, updateNewMessageBodyCreator } from '../../../Redux/State';
+
+// sendMessageCreator
+// updateNewMessageBodyCreator
+
+
 
 const Message = (props) => {
     // debugger
+
+    let newMessageBody = props.state.messagesPage.newMessageBody;
+    let onSendMessageClick = () => {
+        props.dispatch(sendMessageCreator())
+    }
+    // Func input text
+    let onNewMessageChange = (e) => {
+        let body = e.target.value
+        console.log(body)
+        props.dispatch(updateNewMessageBodyCreator(body))
+    }
     return (
         <div>
             <div className={m.message_item}>
@@ -18,7 +35,8 @@ const Message = (props) => {
                     <i>{props.text}</i>
                 </div>
                 <div>
-                    <textarea name="message" id="" rows="4" placeholder='Сообщение'></textarea>
+                    <textarea name="message" id="" rows="4" placeholder='Сообщение' value={newMessageBody} onChange={onNewMessageChange}></textarea>
+                    <button className={m.button} onClick={onSendMessageClick} >Send</button>
                 </div>
             </div>
         </div>

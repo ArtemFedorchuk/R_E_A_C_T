@@ -1,3 +1,8 @@
+const ADD_POST = 'ADD-POST'
+const ON_CHANGE_TEXT = 'ON-CHANGE-TEXT'
+const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY'
+const SEND_MESSAGE = 'SEND-MESSAGE'
+
 export let store = {
     _state: {
 
@@ -69,14 +74,14 @@ export let store = {
     renderEntireTree() {
         // console.log('hello')
     },
-    
+
     subscribe(observer) {
         this.renderEntireTree = observer
     },
 
     dispatch(action) {
-        if (action.type === 'ADD-POST') {
-            // debugger
+        // debugger
+        if (action.type === ADD_POST) {
             let newPost = {
                 id: 5,
                 message: action.postMessage,
@@ -85,27 +90,36 @@ export let store = {
             this._state.profilePage.posts.push(newPost)
             this._state.profilePage.newPostText = ''
             this.renderEntireTree(this._state)
-        } else if (action.type === 'ON-CHANGE-TEXT') {
+        } else if (action.type === ON_CHANGE_TEXT) {
             this._state.profilePage.newPostText = action.newText
             this.renderEntireTree(this._state)
-        } else if(action.type === 'ON-CHANGE-MESSAGE'){
+        } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
             this._state.messagesPage.newMessageBody = action.body
-            // this._state.messagesPage.newMessageBody = ''
+            this.renderEntireTree(this._state)
+        } else if (action.type === SEND_MESSAGE) {
+            let body = this._state.messagesPage.newMessageBody
+            this._state.messagesPage.newMessageBody = ''
+            this._state.messagesPage.messages.push({ text: body })
             this.renderEntireTree(this._state)
         }
     }
 
 }
-
 export const addPostActionCreator = (text) => {
     return {
-        type : 'ADD-POST', postMessage: text
+        type: ADD_POST, postMessage: text
+    }
+}
+export const changeTextActionCreator = (text) => {
+    return {
+        type: UPDATE_NEW_MESSAGE_BODY, newText: text
     }
 }
 
-export const changeTextActionCreator = (text) => {
+export const sendMessageCreator = () => ({ type: SEND_MESSAGE })
+export const updateNewMessageBodyCreator = (body) => {
     return {
-        type : 'ON-CHANGE-TEXT', newText: text
+        type: UPDATE_NEW_MESSAGE_BODY, body: body
     }
 }
 

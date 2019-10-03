@@ -64,3 +64,8 @@
     padding: 10px;
     /* font-size: 18px; */
 }
+.button{
+    background: rgb(3, 112, 255);
+    border-radius: 0px;
+    padding: 0px
+}
