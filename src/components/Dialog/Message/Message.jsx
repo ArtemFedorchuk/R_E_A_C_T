@@ -8,7 +8,7 @@ import { sendMessageCreator, updateNewMessageBodyCreator } from '../../../Redux/
 
 
 const Message = (props) => {
-    // debugger
+    debugger
 
     let newMessageBody = props.state.messagesPage.newMessageBody;
     let onSendMessageClick = () => {
