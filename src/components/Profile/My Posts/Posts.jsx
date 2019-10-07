@@ -6,7 +6,7 @@ import { addPostActionCreator, changeTextActionCreator } from '../../../Redux/St
 
 
 const Posts = (props) => {
-    debugger
+    // debugger
     // Функция которая мапит массив постов в новый массив
     let posts = props.state.profilePage.posts.map((p) => <Post text={p.message} author={p.auhor} />)
 
@@ -15,30 +15,30 @@ const Posts = (props) => {
     let newPostElement = React.useRef();
 
     let addPost = () => {
-        
+
         let text = newPostElement.current.value;
 
         props.dispatch(addPostActionCreator(text))
         newPostElement.current.value = ''
     }
 
-    let changeText = () => {
-        
+    let changeText = (e) => {
+        // debugger
+        const text = e.target.value
         // let text = newPostElement.current.value
-        let text = newPostElement.current.value
         props.dispatch(changeTextActionCreator(text))
         console.log(text)
     }
 
     // store.dispach(addPost)
 
- 
+
     return (
         <div className={p.post}>
             <div className="post__send">
                 {/* <hr/> */}
                 {/* <h4>My post</h4> */}
-                <input type="textarea" ref={newPostElement} placeholder="Напишите пост" onChange={changeText} value={newPostText} /><br />
+                <input type="textarea" ref={newPostElement} placeholder="Напишите пост" value={newPostText} onChange={changeText} /><br />
                 <button type="submit" onClick={addPost}>Send</button>
             </div>
             <hr />

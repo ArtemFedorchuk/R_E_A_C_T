@@ -2,7 +2,7 @@ import profileReducer from "./profile-Reducer"
 import messageReducer from "./message-Reducer"
 
 const ADD_POST = 'ADD-POST'
-// const ON_CHANGE_TEXT = 'ON-CHANGE-TEXT'
+const ON_CHANGE_TEXT = 'ON-CHANGE-TEXT'
 const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY'
 const SEND_MESSAGE = 'SEND-MESSAGE'
 
@@ -99,9 +99,14 @@ export const addPostActionCreator = (text) => {
 }
 export const changeTextActionCreator = (text) => {
     return {
-        type: UPDATE_NEW_MESSAGE_BODY, newText: text
+        type: ON_CHANGE_TEXT, newText: text
     }
 }
+// export const changeTextActionCreator = (text) => {
+//     return {
+//         type: UPDATE_NEW_MESSAGE_BODY, newText: text
+//     }
+// }
 
 export const sendMessageCreator = () => ({ type: SEND_MESSAGE })
 export const updateNewMessageBodyCreator = (body) => {
