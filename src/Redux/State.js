@@ -102,7 +102,6 @@ export const changeTextActionCreator = (text) => {
         type: ON_CHANGE_TEXT, newText: text
     }
 }
-
 // export const changeTextActionCreator = (text) => {
 //     return {
 //         type: UPDATE_NEW_MESSAGE_BODY, newText: text
