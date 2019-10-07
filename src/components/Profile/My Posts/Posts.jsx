@@ -6,7 +6,7 @@ import { addPostActionCreator, changeTextActionCreator } from '../../../Redux/St
 
 
 const Posts = (props) => {
-    // debugger
+    debugger
     // Функция которая мапит массив постов в новый массив
     let posts = props.state.profilePage.posts.map((p) => <Post text={p.message} author={p.auhor} />)
 

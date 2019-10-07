@@ -2,7 +2,7 @@ const ADD_POST = 'ADD-POST'
 const ON_CHANGE_TEXT = 'ON-CHANGE-TEXT'
 
 const profileReducer = (state, action) => {
-    // debugger
+    debugger
     switch(action.type) {
         case ADD_POST:
             let newPost = {
