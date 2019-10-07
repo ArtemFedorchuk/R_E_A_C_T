@@ -1,6 +1,6 @@
 import React from 'react';
 import p from './Posts.module.css';
-import Post from './Post/Post';
+import Post from './../My Posts/Post/Post';
 import { addPostActionCreator, changeTextActionCreator } from '../../../Redux/State';
 
 
@@ -11,7 +11,8 @@ const Posts = (props) => {
     let posts = props.state.profilePage.posts.map((p) => <Post text={p.message} author={p.auhor} />)
 
     let newPostText = props.state.profilePage.newPostText
-    let newPostElement = React.createRef();
+    // let newPostElement = React.createRef();
+    let newPostElement = React.useRef();
 
     let addPost = () => {
         
