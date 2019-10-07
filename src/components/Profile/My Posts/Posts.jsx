@@ -22,7 +22,7 @@ const Posts = (props) => {
         newPostElement.current.value = ''
     }
 
-    let changeText = (e) => {
+    let changeText = () => {
         
         // let text = newPostElement.current.value
         let text = newPostElement.current.value
