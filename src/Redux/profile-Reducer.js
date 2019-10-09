@@ -2,7 +2,6 @@ const ADD_POST = 'ADD-POST'
 const ON_CHANGE_TEXT = 'ON-CHANGE-TEXT'
 
 let initialState = {
-    profilePage: {
         // Информация профиля
         profileInfo: [
             { name: 'Vasso Kolbasso' },
@@ -20,8 +19,6 @@ let initialState = {
             // { id: 1, message: postMessage, likeCount: 133, author: 'Vitalino Tarantino' }
         ],
         newPostText: ''
-
-    }
 }
 const profileReducer = (state = initialState, action) => {
     // debugger
@@ -29,7 +26,7 @@ const profileReducer = (state = initialState, action) => {
         case ADD_POST:
             let newPost = {
                 id: 5,
-                message: state.postMessage,
+                message: state.newPostText,
                 likeCount: 45
             }
             state.posts.push(newPost)

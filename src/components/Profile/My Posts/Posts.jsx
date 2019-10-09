@@ -15,7 +15,7 @@ const Posts = (props) => {
     let newPostElement = React.useRef();
 
     let addPost = () => {
-
+        // debugger
         let text = newPostElement.current.value;
 
         props.dispatch(addPostActionCreator(text))

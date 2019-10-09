@@ -2,7 +2,6 @@ const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY'
 const SEND_MESSAGE = 'SEND-MESSAGE'
 
 let initialState = {
-    messagesPage: {
         // Массив диалогов
         dialogs: [
             { id: 1, name: 'Vasso' },
@@ -19,7 +18,6 @@ let initialState = {
         ],
 
         newMessageBody: ''
-    }
 }
 
 const messageReducer = (state = initialState, action) => {
