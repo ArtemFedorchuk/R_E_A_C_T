@@ -19,6 +19,6 @@ const MessageContainer = (props) => {
         let body = e.target.value
         props.dispatch(updateNewMessageBodyCreator(body))
     }
-    return (<Message/>)
+    return (<Message onSendMessageClick={onSendMessageClick} onNewMessageChange={onNewMessageChange} newMessageBody={newMessageBody} />)
 }
 export default MessageContainer;
