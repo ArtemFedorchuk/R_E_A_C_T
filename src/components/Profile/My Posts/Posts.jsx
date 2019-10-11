@@ -32,7 +32,7 @@ const Posts = (props) => {
                 <input type="textarea" ref={newPostElement} placeholder="Напишите пост" value={props.newPostText} onChange={onChangeText} /><br />
                 <button type="submit" onClick={onAddPost}>Send</button>
             </div>
-            <hr />
+            <hr/>
 
             {posts}
         </div>
