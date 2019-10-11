@@ -1,33 +1,24 @@
 import React from 'react';
 import p from './Posts.module.css';
 import Post from './../My Posts/Post/Post';
-import { addPostActionCreator, changeTextActionCreator } from '../../../Redux/State';
+// import { addPostActionCreator, changeTextActionCreator } from '../../../Redux/State';
 
 
 
 const Posts = (props) => {
     // debugger
     // Функция которая мапит массив постов в новый массив
-    let posts = props.state.profilePage.posts.map((p) => <Post text={p.message} author={p.auhor} />)
+    let posts = props.posts.map((p) => <Post text={p.message} author={p.auhor} />)
 
-    let newPostText = props.state.profilePage.newPostText
-    // let newPostElement = React.createRef();
-    let newPostElement = React.useRef();
+    let newPostElement = React.createRef(); 
 
-    let addPost = () => {
-        // debugger
-        let text = newPostElement.current.value;
-
-        props.dispatch(addPostActionCreator(text))
-        newPostElement.current.value = ''
+    let onAddPost = () => {
+        props.addPost()
     }
 
-    let changeText = (e) => {
-        // debugger
-        const text = e.target.value
-        // let text = newPostElement.current.value
-        props.dispatch(changeTextActionCreator(text))
-        console.log(text)
+    let onChangeText = () => {
+        let text = newPostElement.current.value
+        props.updateNewPostText(text)
     }
 
     // store.dispach(addPost)
@@ -38,8 +29,8 @@ const Posts = (props) => {
             <div className="post__send">
                 {/* <hr/> */}
                 {/* <h4>My post</h4> */}
-                <input type="textarea" ref={newPostElement} placeholder="Напишите пост" value={newPostText} onChange={changeText} /><br />
-                <button type="submit" onClick={addPost}>Send</button>
+                <input type="textarea" ref={newPostElement} placeholder="Напишите пост" value={props.newPostText} onChange={onChangeText} /><br />
+                <button type="submit" onClick={onAddPost}>Send</button>
             </div>
             <hr />
 
