@@ -1,6 +1,7 @@
 import { sendMessageCreator, updateNewMessageBodyCreator } from '../../../Redux/State';
 import Message from './Message';
-import { connect } from 'tls';
+// import { connect } from 'tls';
+import { connect } from 'react-redux';
 
 let mapStateToProps = (state) => {
     return {

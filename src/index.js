@@ -6,15 +6,12 @@ import App from './App';
 // import state, { addPost, onChangeText, subscribe } from './Redux/State';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './Redux/State'
-import MyContext from './Store-context';
 
 
 let renderEntireTree = (state) => {
 // debugger
     ReactDOM.render(<BrowserRouter>
-                        <MyContext.Provider value={store}>
                             < App state={state} dispatch={store.dispatch.bind(store)} store={store} />
-                        </MyContext.Provider>
                     </BrowserRouter>, document.getElementById('root'));
 
 }

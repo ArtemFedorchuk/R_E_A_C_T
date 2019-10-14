@@ -2,38 +2,43 @@ import React from 'react';
 // import Post from './../My Posts/Post/Post';
 import { addPostActionCreator, changeTextActionCreator } from '../../../Redux/State';
 import Posts from './Posts';
+// import { connect } from 'tls';
+import { connect } from 'react-redux';
 
+// const PostsContainer = (props) => {
 
+//     let addPost = () => {
+//         props.store.dispatch(addPostActionCreator())
+//     }
 
-const PostsContainer = (props) => {
-    // debugger
-    // Функция которая мапит массив постов в новый массив
-    // let posts = props.state.profilePage.posts.map((p) => <Post text={p.message} author={p.auhor} />)
+//     let changeText = (text) => {
+//         props.store.dispatch(changeTextActionCreator(text))
+//     }
 
-    // let newPostText = props.state.profilePage.newPostText
-    // let newPostElement = React.createRef();
-    // let newPostElement = React.useRef();
+//     return (<Posts addPost={addPost} updateNewPostText={changeText} posts={props.state.profilePage.posts} newPostText={props.state.profilePage.newPostText}/>);
+// }
+// export default PostsContainer
 
-    let addPost = () => {
-        // debugger
-        // let text = newPostElement.current.value;
-
-        props.store.dispatch(addPostActionCreator())
-        // newPostElement.current.value = ''
+// debugger
+let mapStateToProps = (state) => {
+    return {
+        posts: state.profilePage.posts,
+        newPostText: state.profilePage.newPostText
     }
-
-    let changeText = (text) => {
-        // debugger
-        // const text = e.target.value
-        // let text = newPostElement.current.value
-        props.store.dispatch(changeTextActionCreator(text))
-    }
-
-    // store.dispach(addPost)
-
-
-    return (<Posts addPost={addPost} updateNewPostText={changeText} posts={props.state.profilePage.posts} newPostText={props.state.profilePage.newPostText}/>);
 }
+
+let mapDispatchToProps = (dispatch) => {
+    return {
+        addPost: () => {
+            dispatch(addPostActionCreator())
+        },
+        updateNewPostText: (text) => {
+            dispatch(changeTextActionCreator(text))
+        }
+    }
+}
+
+const PostsContainer = connect(mapStateToProps, mapDispatchToProps)(Posts)
 
 
 export default PostsContainer
