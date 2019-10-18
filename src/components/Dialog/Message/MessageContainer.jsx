@@ -1,11 +1,13 @@
+import React from 'react'
 import { sendMessageCreator, updateNewMessageBodyCreator } from '../../../Redux/State';
-import Message from './Message';
 import { connect } from 'react-redux';
+import Message from './Message';
 
 
-const dialogPage = (props) =>{
+const message = (props) =>{
     return(<Message/>)
 }
+
 let mapStateToProps = (state) => {
     return {
         newMessageBody: state.messagesPage.newMessageBody
@@ -25,7 +27,7 @@ let mapDispatchToProps = (dispatch) => {
     }
 }
 
-const MessageContainer = connect(mapStateToProps, mapDispatchToProps)(Message)
+const MessageContainer = connect(mapStateToProps, mapDispatchToProps)(message)
 
 export default MessageContainer
 

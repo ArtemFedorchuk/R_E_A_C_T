@@ -1,24 +1,9 @@
 import React from 'react';
 import m from './../Message/Message.module.css';
-// import { sendMessageCreator, updateNewMessageBodyCreator } from '../../../Redux/State';
-
-// sendMessageCreator
-// updateNewMessageBodyCreator
-
-
 
 const Message = (props) => {
     // debugger
 
-    // let newMessageBody = props.state.messagesPage.newMessageBody;
-    // let onSendMessageClick = () => {
-    //     props.dispatch(sendMessageCreator())
-    // }
-    // // Func input text
-    // let onNewMessageChange = (e) => {
-    //     let body = e.target.value
-    //     props.dispatch(updateNewMessageBodyCreator(body))
-    // }
     return (
         <div>
             <div className={m.message_item}>
