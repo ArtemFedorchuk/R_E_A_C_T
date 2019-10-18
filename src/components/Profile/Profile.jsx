@@ -7,13 +7,13 @@ import PostsContainer from './My Posts/PostsContainer';
 
 
 const Profile = (props) =>{
-    // debugger
+    debugger
     // console.log(props.state)
     
     return(
         <div>
             <ProfileInfo state={props.state} />
-            <PostsContainer store={props.store} state={props.state} dispatch={props.dispatch}/>
+            <PostsContainer state={props.state} /*store={props.store} state={props.state} dispatch={props.dispatch}*/  />
         </div>
     );
 }
