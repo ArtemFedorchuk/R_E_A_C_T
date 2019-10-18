@@ -27,39 +27,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-// const PostsContainer = connect( mapStateToProps, mapDispatchToProps)(Posts)
-// export default PostsContainer
-
 export default connect(mapStateToProps, mapDispatchToProps)(PostsContainer)
-
-
-// export default PostsContainer
-
-
-
-
-// const PostsContainer = (props) => {
-
-//     return (<Posts addPost={props.addPost} updateNewPostText={props.updateNewPostText} posts={props.posts} newPostText={props.newPostText}/>);
-
-// }
-
-// let mapStateToProps = (state) => {
-//     return {
-//         posts: state.profilePage.posts,
-//         newPostText: state.profilePage.newPostText
-//     }
-// }
-
-// let mapDispatchToProps = (dispatch) => {
-//     return {
-//         addPost: () => {
-//             dispatch(addPostActionCreator())
-//         },
-//         updateNewPostText: (text) => {
-//             dispatch(changeTextActionCreator(text))
-//         }
-//     }
-// }
-
-// export default connect(mapStateToProps, mapDispatchToProps)(PostsContainer);

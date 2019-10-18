@@ -8,7 +8,7 @@ import m from './../Message/Message.module.css';
 
 
 const Message = (props) => {
-    debugger
+    // debugger
 
     // let newMessageBody = props.state.messagesPage.newMessageBody;
     // let onSendMessageClick = () => {
