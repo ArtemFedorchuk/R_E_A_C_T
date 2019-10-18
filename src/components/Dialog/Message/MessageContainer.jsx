@@ -2,6 +2,8 @@ import { sendMessageCreator, updateNewMessageBodyCreator } from '../../../Redux/
 import Message from './Message';
 import { connect } from 'react-redux';
 
+
+
 let mapStateToProps = (state) => {
     return {
         newMessageBody: state.messagesPage.newMessageBody
@@ -11,6 +13,7 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
     return {
         onSendMessageClick: () => {
+            alert('www')
             dispatch(sendMessageCreator())
         },
         onNewMessageChange: (e) => {
@@ -23,4 +26,5 @@ let mapDispatchToProps = (dispatch) => {
 const MessageContainer = connect(mapStateToProps, mapDispatchToProps)(Message)
 
 export default MessageContainer
+
 
