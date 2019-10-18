@@ -17,7 +17,7 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
     return {
         onSendMessageClick: () => {
-            alert('www')
+            // alert('www')
             dispatch(sendMessageCreator())
         },
         onNewMessageChange: (e) => {
