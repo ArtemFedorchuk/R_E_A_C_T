@@ -2,7 +2,13 @@ import React from 'react';
 import m from './../Message/Message.module.css';
 
 const Message = (props) => {
-    // debugger
+    debugger
+    const onNewMessageChange = () => {
+        props.NewMessageChange()
+    }
+    const onSendMessageClick = () => {
+        props.SendMessageClick()
+    }
 
     return (
         <div>
@@ -19,8 +25,8 @@ const Message = (props) => {
                     <i>{props.text}</i>
                 </div>
                 <div>
-                    <textarea name="message" id="" rows="4" placeholder='Сообщение' value={props.newMessageBody} onChange={props.onNewMessageChange}></textarea>
-                    <button className={m.button} onClick={props.onSendMessageClick} >Send</button>
+                    <textarea name="message" id="" rows="4" placeholder='Сообщение' value={props.newMessageBody} onChange={onNewMessageChange}></textarea>
+                    <button className={m.button} onClick={onSendMessageClick} >Send</button>
                 </div>
             </div>
         </div>

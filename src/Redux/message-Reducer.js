@@ -22,18 +22,30 @@ let initialState = {
 
 const messageReducer = (state = initialState, action) => {
     // debugger
-    let stateCopy = {...state}
     switch (action.type) {
         case UPDATE_NEW_MESSAGE_BODY:
-            stateCopy.newMessageBody = {...state.newMessageBody}
-            stateCopy.newMessageBody = action.body
-            return stateCopy
+            return {
+                ...state,
+                newMessageBody:  action.body
+                // newMessageBody: [...state.newMessageBody, action.body],
+                // newMessageBody: action.body
+            }
+            // stateCopy.newMessageBody = {...state.newMessageBody}
+            // stateCopy.newMessageBody = action.body
+            // return stateCopy
         
         case SEND_MESSAGE:
-            stateCopy.newMessageBody = {...state.newMessageBody}
-            stateCopy.newMessageBody = ''
-            state.messages.push({ text: stateCopy.newMessageBody })
-            return stateCopy
+            return {
+                ...state,
+                newMessageBody: [...state.newMessageBody, ''],
+                // newMessageBody: '',
+                messages: [...state.messages, { text: action.body }]
+
+            }
+            // stateCopy.newMessageBody = {...state.newMessageBody}
+            // stateCopy.newMessageBody = ''
+            // state.messages.push({ text: stateCopy.newMessageBody })
+            // return stateCopy
         
         default:
             return state
