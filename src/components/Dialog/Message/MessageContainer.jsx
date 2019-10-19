@@ -21,8 +21,8 @@ let mapDispatchToProps = (dispatch) => {
             // alert('www')
             dispatch(sendMessageCreator())
         },
-        NewMessageChange: (e) => {
-            let body = e.target.value
+        NewMessageChange: (body) => {
+            
             dispatch(updateNewMessageBodyCreator(body))
         }
     }

@@ -3,8 +3,9 @@ import m from './../Message/Message.module.css';
 
 const Message = (props) => {
     debugger
-    const onNewMessageChange = () => {
-        props.NewMessageChange()
+    const onNewMessageChange = (e) => {
+        let body = e.target.value
+        props.NewMessageChange(body)
     }
     const onSendMessageClick = () => {
         props.SendMessageClick()

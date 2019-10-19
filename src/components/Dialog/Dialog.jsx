@@ -1,7 +1,8 @@
 import React from 'react';
 import d from './../Dialog/Dialog.module.css'
 import DialogAuthor from './DialogAuthor/DialogAuthor';
-import Message from './Message/Message';
+// import Message from './Message/Message';
+import Message from './Message/MessageContainer'
 // import { NavLink } from 'react-router-dom';
 
 
