@@ -10,6 +10,7 @@ import News from './components/News/News';
 import Music from './components/Music/Music';
 import Setting from './components/Setting/Setting';
 import Friends from './components/Friends/Friends'; 
+import Users from './components/Users/Users';
 
 
 const App = (props) => {
@@ -26,6 +27,7 @@ const App = (props) => {
               <Route path='/news' component={News} />
               <Route path='/music' component={Music} />
               <Route path='/setting' component={Setting} />
+              <Route path='/users' component={Users} />
               <Route path='/friends' render={ () => <Friends friendsArr={props.state.navbar.friends} />} />
             </div>
         </div>

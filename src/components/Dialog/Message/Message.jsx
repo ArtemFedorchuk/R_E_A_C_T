@@ -2,7 +2,8 @@ import React from 'react';
 import m from './../Message/Message.module.css';
 
 const Message = (props) => {
-    debugger
+    // debugger
+    
     const onNewMessageChange = (e) => {
         let body = e.target.value
         props.NewMessageChange(body)
