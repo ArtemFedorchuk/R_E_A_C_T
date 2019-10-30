@@ -18,7 +18,7 @@ const App = (props) => {
   // debugger
 
   return (
- 
+
         <div className="app-wrapper">
           <Header />
           <Navbar {...props} />
