@@ -1,6 +1,6 @@
 // import React from 'react'
 import React from 'react'
-import { sendMessageCreator, updateNewMessageBodyCreator } from '../../../Redux/State';
+import { sendMessageCreator, updateNewMessageBodyCreator } from './../../../Redux/message-Reducer';
 import { connect } from 'react-redux';
 import Message from './Message';
 
@@ -18,11 +18,10 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
     return {
         SendMessageClick: () => {
-            // alert('www')
             dispatch(sendMessageCreator())
         },
+
         NewMessageChange: (body) => {
-            
             dispatch(updateNewMessageBodyCreator(body))
         }
     }

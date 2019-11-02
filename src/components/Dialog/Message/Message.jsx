@@ -18,7 +18,7 @@ const Message = (props) => {
                 <div>
                     <b>Author</b>
                 </div>
-                <div className={m.text_wrap}>
+                <div className={m.text_wrap}> 
                     <div className={m.circle}></div>
                     <i>{props.text}</i>
                 </div>
