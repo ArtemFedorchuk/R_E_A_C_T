@@ -10,10 +10,10 @@ const Dialog = (props) => {
 // debugger
 
     // Функция которая мапит массив диалогов в новый массив
-    let Dialogs = props.state._state.messagesPage.dialogs.map((d) => <DialogAuthor name={d.name} id={d.id} /*key={}*/ state={props.state} />)
+    let Dialogs = props.state._state.messagesPage.dialogs.map((d) => <DialogAuthor name={d.name} key={d.id}/>)
 
     // Функция которая мапит массив сообщений в новый массив
-    let Messages = props.state._state.messagesPage.messages.map((m) => <Message text={m.text} state={props.state} /*key={}*/ dispatch={props.dispatch}/>)
+    let Messages = props.state._state.messagesPage.messages.map((m) => <Message text={m.text} key={m.id}/>)
 
     return (
 

@@ -63,13 +63,13 @@ export let store = {
 
         navbar: {
             friends: [
-                { name: 'Artem' },
-                { name: 'Victor' },
-                { name: 'Lucas' },
-                { name: 'Valera' },
-                { name: 'Nicolas' },
+                { name: 'Artem', id: 1 },
+                { name: 'Victor', id: 2 },
+                { name: 'Lucas' , id: 3},
+                { name: 'Valera' , id: 4},
+                { name: 'Nicolas' , id: 5},
                 // {name : 'Duglas'},
-                { name: 'Djo' }
+                { name: 'Djo' , id: 6}
             ]
         }
 
