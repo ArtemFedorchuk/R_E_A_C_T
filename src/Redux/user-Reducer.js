@@ -1,5 +1,6 @@
 const FOLLOW = 'FOLLOW'
 const UNFOLLOW = 'UNFOLLOW'
+const SETUSERS = 'SETUSERS'
 
 let initialState = {
     // Массив диалогов
@@ -35,6 +36,9 @@ const userReducer = (state = initialState, action) => {
                     return u
                 })
             }
+
+        case SETUSERS:
+            return{}
 
             default: 
             return state

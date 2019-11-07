@@ -38,6 +38,9 @@ h2{
     margin: 30px 0px;
     background: #000;
 }
+.showMoreWrap button:hover{
+    background:#504DF3;
+}
 .showMoreWrap button span{
     font-size: 16 px;
 }
