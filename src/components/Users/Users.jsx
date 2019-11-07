@@ -18,8 +18,7 @@ const Users = (props) => {
                 </div>
             </div>
         )
-    })
-
+        })
     return (
         <div>
             <div><h3 className={u.h3}> Users </h3></div>
