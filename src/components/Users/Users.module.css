@@ -30,3 +30,14 @@ h2{
 .status{
     font-weight: bolder;
 }
+.showMoreWrap{
+    display: flex;
+    justify-content: center;
+}
+.showMoreWrap button{
+    margin: 30px 0px;
+    background: #000;
+}
+.showMoreWrap button span{
+    font-size: 16 px;
+}

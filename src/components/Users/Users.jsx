@@ -26,6 +26,9 @@ const Users = (props) => {
             <div className={u.wrap_cont}>
                 {users}
             </div>
+            <div className={u.showMoreWrap}>
+                <button> Show more <span>&#9850;</span></button>
+            </div>
         </div>
     )
 
