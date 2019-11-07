@@ -25,6 +25,7 @@ let mapDispatchToProps = (dispatch) => {
         },
 
         unfollow: (id) =>{
+            // debugger
             dispatch(unfollowAC(id))
         },
         setUsers: (users) =>{

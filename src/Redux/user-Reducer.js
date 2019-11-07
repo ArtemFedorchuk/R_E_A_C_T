@@ -5,7 +5,7 @@ const SETUSERS = 'SETUSERS'
 let initialState = {
     // Массив диалогов
     users: [
-        { id: 1, fullname: 'Vasso Teroristo', located: { country: 'Ukraine', town: 'Kharkov' }, followStatus: true, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss' },
+        { id: 1, fullname: 'Vasso', located: { country: 'Ukraine', town: 'Kharkov' }, followStatus: true, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss' },
         { id: 2, fullname: 'Borya', located: { country: 'Ukraine', town: 'Kiev' }, followStatus: false, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss two' },
         { id: 3, fullname: 'Tioman', located: { country: 'Ukraine', town: 'Dnepr' }, followStatus: true, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss three' },
         { id: 4, fullname: 'Murcepan', located: { country: 'Austria', town: 'Oldtown' }, followStatus: true, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss three' },
@@ -13,6 +13,8 @@ let initialState = {
     ]
 }
 
+// Изменил в case FOLLOW: return {...u, followStatus: true} На return {...u, followStatus: false}, так же и в case UNFOLLOW! и все заработало!
+// в случае чего вернуть обратно!
 const userReducer = (state = initialState, action) => {
     // debugger
     switch (action.type) {
@@ -21,18 +23,19 @@ const userReducer = (state = initialState, action) => {
                 ...state,
                 users: state.users.map(u => {
                     if(u.id === action.id){
-                        return {...u, followStatus: true}
+                        return {...u, followStatus: false}
                     }
                     return u
                 })
             }
 
         case UNFOLLOW:
+                // debugger
             return {
                 ...state,
                 users: state.users.map(u => {
                     if(u.id === action.id){
-                        return {...u, followStatus: false}
+                        return {...u, followStatus: true}
                     }
                     return u
                 })
