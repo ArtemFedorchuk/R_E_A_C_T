@@ -1,3 +1,5 @@
+// import Axios from "axios"
+
 const FOLLOW = 'FOLLOW'
 const UNFOLLOW = 'UNFOLLOW'
 const SETUSERS = 'SETUSERS'
@@ -12,6 +14,8 @@ let initialState = {
         { id: 5, fullname: 'Murces', located: { country: 'Ukraine', town: 'Odessa' }, followStatus: false, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss four' }
     ]
 }
+
+// Axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {})
 
 // Изменил в case FOLLOW: return {...u, followStatus: true} На return {...u, followStatus: false}, так же и в case UNFOLLOW! и все заработало!
 // в случае чего вернуть обратно!

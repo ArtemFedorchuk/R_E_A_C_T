@@ -1,16 +1,14 @@
 import React from 'react';
 import u from './Users.module.css'
+import Axios from 'axios';
 
 const Users = (props) => {
     // debugger
-    // props.setUsers(users: [
-    //     { id: 1, fullname: 'Vasso Teroristo', located: { country: 'Ukraine', town: 'Kharkov' }, followStatus: true, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss' },
-    //     { id: 2, fullname: 'Borya', located: { country: 'Ukraine', town: 'Kiev' }, followStatus: false, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss two' },
-    //     { id: 3, fullname: 'Tioman', located: { country: 'Ukraine', town: 'Dnepr' }, followStatus: true, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss three' },
-    //     { id: 4, fullname: 'Murcepan', located: { country: 'Austria', town: 'Oldtown' }, followStatus: true, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss three' },
-    //     { id: 5, fullname: 'Murces', located: { country: 'Ukraine', town: 'Odessa' }, followStatus: false, src: 'https://proimg.ru/wp-content/uploads/2017/10/8cb.jpg', aboutMe: 'I am a Boss four' }
-    // ]
-    // )
+   if(props.users.length === 0 ){
+    Axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
+        props.setUsers()
+    })
+   }
 
     let users = props.users.map((user) => {
 
@@ -25,7 +23,7 @@ const Users = (props) => {
                         <div>
                             {user.followStatus
                                 ?<button onClick={() => {props.follow(user.id)}}>Follow</button>
-                                :<button onClick={() => {debugger;props.unfollow(user.id)}}>Unfollow</button>}
+                                :<button onClick={() => {props.unfollow(user.id)}}>Unfollow</button>}
                         </div>
                     </div>
                 </div>
