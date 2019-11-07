@@ -5,7 +5,7 @@ import { followAC, unfollowAC } from '../../Redux/user-Reducer'
 
 
 const userCont = (props) => {
-    debugger
+    // debugger
 
     return(
         <Users {...props}/>
