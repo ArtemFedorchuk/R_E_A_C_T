@@ -1,11 +1,14 @@
 import React from 'react';
 import u from './Users.module.css'
-import Axios from 'axios';
+import axios from 'axios';
 
 const Users = (props) => {
-    // debugger
+    debugger
+
    if(props.users.length === 0 ){
-    Axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
+    axios.get('https://social-network.samuraijs.com/api/1.0/users')
+    .then(response => {
+        debugger
         props.setUsers()
     })
    }
