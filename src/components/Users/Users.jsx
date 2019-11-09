@@ -38,7 +38,7 @@ let getUsers = () =>{
                 </div>
             </div>
         )
-    })
+    }) 
 
     return (
         <div>
