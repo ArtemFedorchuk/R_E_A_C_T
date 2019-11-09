@@ -1,12 +1,19 @@
+.grid{
+    display: grid;
+    grid-template-columns: 4fr 10fr;
+}
+
 .wrap_cont{
-display: flex;
-flex-wrap: wrap;
+display: grid;
+grid-template-columns: 8fr 5fr 3fr 5fr 5fr ;
+grid-gap: 30px;
 justify-content: space-around
 }
 .user_wrap{
     width: 150px;
     padding: 10px;
-    border: 1px dotted black
+    border: 1px dotted black;
+    overflow: hidden;
 }
 .h3{
     color: #FF1519;
