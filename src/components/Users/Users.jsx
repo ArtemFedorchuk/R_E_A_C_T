@@ -4,9 +4,7 @@ import * as axios from 'axios';
 
 class Users extends React.Component {
     debugger
-    // constructor(props) {
-    //     super(props)
-    // }
+    
 
     componentDidMount(){
         this.props.users.length === 0 ? axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => this.props.setUsers(response.data.items)) : console.error('API_Err');
