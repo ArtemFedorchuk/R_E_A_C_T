@@ -2,12 +2,14 @@
     display: grid;
     grid-template-columns: 4fr 10fr;
 }
+/* .activeLink{
+} */
 
 .wrap_cont{
-display: grid;
-grid-template-columns: 8fr 5fr 3fr 5fr 5fr ;
-grid-gap: 30px;
-justify-content: space-around
+    display: grid;
+    grid-template-columns: 8fr 5fr 3fr 5fr 5fr ;
+    grid-gap: 30px;
+    justify-content: space-around
 }
 .user_wrap{
     width: 150px;
@@ -20,15 +22,17 @@ justify-content: space-around
     font-size: 4rem;
     text-align: center;
 }
-
 h2{
     color: red
 }
-
 .img{
     width: 150px;
     height: 150px;
     box-shadow: 0px 5px 10px black;
+}
+.img:hover{
+    filter: grayscale(.75);
+    transition: 1.25 ease
 }
 .located{
     font-size: 1.1rem;

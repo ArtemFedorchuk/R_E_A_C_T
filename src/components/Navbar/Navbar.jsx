@@ -5,7 +5,7 @@ import FriendsNav from './FriendsNav/FriendsNav';
 
 const Navbar = (props) => {
     // debugger
-
+ 
     return (
         <nav className={n.nav}>
             <div className="nav__item">

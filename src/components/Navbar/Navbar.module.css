@@ -18,8 +18,6 @@ a {
 
 a:hover {
     color: rgb(31, 159, 217);
-    font-size: 22px;
-    letter-spacing: 5px;
 }
 
 .activeLink {
