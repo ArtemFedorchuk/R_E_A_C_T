@@ -19,4 +19,5 @@ const FriendsNav = (props) => {
         </div>
     )
 } 
+
 export default FriendsNav

@@ -2,18 +2,6 @@
     color: rgb(31, 159, 217);
 }
 
-/* a {
-    display: block;
-    color: white;
-    font-size: 20px;
-    font-family: serif;
-    text-transform: uppercase;
-    transition: 0.5s ease;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    letter-spacing: 4px;
-} */
-
 a:hover {
     color: rgb(31, 159, 217);
 }
@@ -21,9 +9,11 @@ a:hover {
 .friends{
     margin-top: 35px;
 }
-
-.friend__wraper{
+p{
+    text-transform: none;
+}
+.friend__wraper{ 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }

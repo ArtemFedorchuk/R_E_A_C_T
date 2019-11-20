@@ -32,8 +32,7 @@ const App = (props) => {
               <Route path='/friends' render={ () => <Friends friendsArr={props.state._state.navbar.friends} />} />
             </div>
         </div>
-        
-    
   );
+  
 }
 export default App;

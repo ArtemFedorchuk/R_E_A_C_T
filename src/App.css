@@ -10,7 +10,7 @@ a {
 .app-wrapper {
     display: grid;
     grid-template-areas: 'h h' 'n c';
-    grid-template-columns: 1.5fr 13fr;
+    grid-template-columns: 1.8fr 13fr;
     /* grid-gap: 1px; */
 }
 
