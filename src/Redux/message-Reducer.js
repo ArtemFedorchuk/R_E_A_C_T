@@ -21,7 +21,7 @@ let initialState = {
 }
 
 const messageReducer = (state = initialState, action) => {
-    // debugger
+    debugger
     switch (action.type) {
         case UPDATE_NEW_MESSAGE_BODY:
             return {
@@ -42,7 +42,7 @@ const messageReducer = (state = initialState, action) => {
                 newMessageBody: '',
                 messages: [...state.messages, {text: body }]
 
-            }
+            } 
             // stateCopy.newMessageBody = {...state.newMessageBody}
             // stateCopy.newMessageBody = ''
             // state.messages.push({ text: stateCopy.newMessageBody })
