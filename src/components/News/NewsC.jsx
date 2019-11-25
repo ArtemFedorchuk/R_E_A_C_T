@@ -3,17 +3,17 @@ import axios from 'axios';
 import n from "./News.module.css";
 import {connect} from "react-redux";
 import {setNewsAC} from "./../../Redux/news-Reducer";
+import {NavLink} from "react-router-dom";
 
 class NewsC extends React.Component{
     // https://social-network.samuraijs.com/api/1.0/users  --this API users
     //  https://kudago.com/public-api/v1.4/movies/  --this API films
 
     componentDidMount() {
-        axios.get('https://kudago.com/public-api/v1.4/movies/')
+        axios.get ('https://kudago.com/public-api/v1.4/movies/')
             .then(response => {
                 // debugger
-                console.log(response)
-                this.props.setNewsAC(response.id)
+                this.props.setNewsAC(response)
             } )
     }
 
@@ -22,13 +22,21 @@ class NewsC extends React.Component{
             <div>
                 <h1>News Film</h1>
                 <div className={n.news}>
-                    <img src="http://gloria-mur.ru/wp-content/uploads/2017/05/avatar1-740x463.jpg" alt="cat" />
+                    <div className={n.imgWraper}>
+                        <NavLink to="/News/1" activeClassName={n.activeLink}>
+                            <img src="http://gdekoncert.ru/wp-content/uploads/2018/07/1500994114_20171.jpg" alt="cat" />
+                        </NavLink>
+
+                        <NavLink to="/News/1" activeClassName={n.activeLink}>
+                            <img src="https://proxy11.online.ua/news/r3-2c8c91e63d/680_5b3e0479e6fef.jpg" alt="cat" />
+                        </NavLink>
+                    </div>
                     <div>
-                        <p>This is my News!</p>
-                        <p><cite>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                        <p><h3>This is my news films!</h3></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
                             Adipisci consequuntur nostrum nesciunt molestias, deleniti temporibus, <br />
                             iste, rem quibusdam dolorum ratione exercitationem quos <br />
-                            in inventore quod fuga eligendi est ad iure?</cite></p>
+                            in inventore quod fuga eligendi est ad iure?</p>
                     </div>
                 </div>
             </div>

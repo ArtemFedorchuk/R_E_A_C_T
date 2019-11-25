@@ -1,20 +1,32 @@
 .news{
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     /* flex-direction: column; */
     /* background: red; */
     color: black;
 }
+.imgWraper{
+    display: flex;
+    justify-content: space-around;
+}
  h1{
      text-align: center;
-    color: crimson;
-    text-transform: uppercase;
-    font-size: 70px;
-    padding: 50;
-}
+     color: crimson;
+     text-transform: uppercase;
+     font-size: 70px;
+     padding: 50;
+     filter: drop-shadow(1px 3px .1px black);
 
+ }
 .news img{
-    width: 240px;
-    height: 200px;
-    border-radius: 50%
+    width: 420px;
+    height: 270px;
+    margin: 0 auto;
+    border: 2px solid black;
+    filter: drop-shadow(-5px 0px 10px black);
+    /*border-radius: 50%*/
+}
+.news p {
+    text-align: center;
 }

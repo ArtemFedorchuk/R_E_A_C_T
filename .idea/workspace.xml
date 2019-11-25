@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62a20dea-54f2-4cad-b985-0495a62f34b2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Redux/news-Reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/News/NewsC.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/News/NewsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/first-react.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/first-react.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/first_react_node_modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/message-Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/message-Reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/News/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/News/News.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News/NewsC.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/NewsC.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1562522594421</updated>
       <workItem from="1574669746349" duration="1861000" />
-      <workItem from="1574672039463" duration="17946000" />
+      <workItem from="1574672039463" duration="25128000" />
     </task>
     <servers />
   </component>
