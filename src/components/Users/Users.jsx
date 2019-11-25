@@ -4,18 +4,19 @@ import * as axios from 'axios';
 import { NavLink } from "react-router-dom";
 
 class Users extends React.Component {
-    debugger
-    
+    // debugger
 
     componentDidMount(){
-        this.props.users.length === 0 ? axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => this.props.setUsers(response.data.items)) : console.error('API_Err');
+        this.props.users.length === 0 ? axios.get('https://social-network.samuraijs.com/api/1.0/users')
+            .then(response => this.props.setUsers(response.data.items)) : console.error('API_Err');
     }
 
     getUsers = () =>{
         let count = 10;
-        this.props.users.length === count || 20? axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => this.props.setUsers(response.data.items)) : console.error('API_Err');
-    } 
-    
+        this.props.users.length === count || 20? axios.get('https://social-network.samuraijs.com/api/1.0/users')
+            .then(response => this.props.setUsers(response.data.items)) : console.error('API_Err');
+    }
+
         render(){
             let users = this.props.users.map((user) => {
 
@@ -57,5 +58,6 @@ class Users extends React.Component {
             )
         }
     }
+
 
     export default Users

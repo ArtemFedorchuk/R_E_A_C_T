@@ -4,18 +4,19 @@ import './App.css';
 import Header from './../src/components/Header/Header';
 import Navbar from './../src/components/Navbar/Navbar';
 import Profile from './../src/components/Profile/Profile';
-import { Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import Dialog from './components/Dialog/Dialog';
-import News from './components/News/News';
 import Music from './components/Music/Music';
-import Setting from './components/Setting/Setting';
+import Setting from './components/Setting/Setting';// import News from './components/News/News';
+
 import Friends from './components/Friends/Friends'; 
 import UsersContainer from './components/Users/UsersContainer';
+import NewsC from "./components/News/NewsC";
 
 
 
 const App = (props) => {
-  debugger
+  // debugger
 
   return (
 
@@ -25,7 +26,7 @@ const App = (props) => {
             <div className="app-wrapper-content">
               <Route path='/dialog' render={ () => <Dialog {...props} store={props.store}/> } />
               <Route path='/profile' render={ () => <Profile {...props} /*dispatch={props.dispatch} store={props.store}*//>} />
-              <Route path='/news' component={News} />
+              <Route path='/news' render={() => <NewsC /*store={props.store}*/ />}/>
               <Route path='/music' component={Music} />
               <Route path='/setting' component={Setting} />
               <Route path='/users' component={UsersContainer} />
@@ -34,5 +35,5 @@ const App = (props) => {
         </div>
   );
   
-}
+};
 export default App;

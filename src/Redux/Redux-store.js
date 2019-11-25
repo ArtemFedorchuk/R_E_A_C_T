@@ -2,16 +2,18 @@ import { createStore, combineReducers } from "redux";
 import messageReducer from "./message-Reducer";
 import profileReducer from "./profile-Reducer";
 import userReducer from "./user-Reducer";
+import newsReducer from './news-Reducer';
 
 
-let redusers = combineReducers({
+let reducers = combineReducers({
     profilePage: profileReducer,
     messagesPage: messageReducer,
-    usersPage: userReducer
-})
+    usersPage: userReducer,
+    newsPage: newsReducer
+});
 
-let store = createStore(redusers)
+let store = createStore(reducers);
 
-window.store = store
+window.store = store;
 
 export default store

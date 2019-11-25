@@ -21,7 +21,7 @@ let initialState = {
 }
 
 const messageReducer = (state = initialState, action) => {
-    debugger
+    // debugger
     switch (action.type) {
         case UPDATE_NEW_MESSAGE_BODY:
             return {
@@ -35,7 +35,7 @@ const messageReducer = (state = initialState, action) => {
             // return stateCopy
         
         case SEND_MESSAGE:
-                debugger
+                // debugger
             let body = state.newMessageBody
             return {
                 ...state,
